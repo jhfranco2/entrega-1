@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\title{Entrega 1}
+\author{jhoan mateo franco vargas }
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\renewcommand*\contentsname{Contenido}
+
+\tableofcontents
+\newpage
+
+
+\section{Diseño de una memoria Ram:}
+
+Se desea diseñar el sistema de control de lectura y escritura de una memoria RAM de 32 filas
+x 32 columnas, donde cada dato es de 4 bits. Para la primera entrega deberá presentar una
+propuesta de diseño de tres circuitos combinables en Logisim:
+
+\begin{enumerate}
+    \item Un decodificador que convierte una señal de 5 bits a un único dato (entre 0 y 31) para
+la selección de filas y columnas de una memoria RAM, y para el control de lectura/
+escritura de la misma.
+    \item Un circuito de control con tres entradas y dos salidas:
+    \begin{enumerate}
+        \item Entrada chip select (CS) funciona como la habilitación de la memoria RAM.
+        \item Entrada write enable (WE) para activar la escritura en la memoria.
+        \item Entrada output enable (OE) para activar el envío de datos por el bus.
+    \end{enumerate}
+    Cuando CS y WE están activados, la salida E (escritura) debe activarse. Si WE está activado,
+la salida L (lectura) debe permanecer inactiva. Si CS y OE están activados, la salida L (lectura)
+debe activarse.
+    \item Un circuito conversor para un display de siete segmentos, que se utilizará para visualizar
+posteriormente el dato disponible en la memoria RAM.
+La entrega consiste en un documento que presente el diseño, cálculos, diagramas, investigación
+y demás consideraciones que se hayan tenido para la primera entrega. Además, se debe enviar
+un archivo de Logisim con los tres sub-circuitos solicitados.
+\end{enumerate}
+\newpage
+es una nueva pagina
+
+
+\end{document}
+
